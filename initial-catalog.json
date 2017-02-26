@@ -1,0 +1,93 @@
+{
+    "authors": {
+        "author1": {
+            "name": "author1",
+            "avatar": "img1.jpg"
+        },
+        "author2": {
+            "name": "author2",
+            "avatar": "img2.jpg"
+        },
+        "author3": {
+            "name": "author3",
+            "avatar": "img3.jpg"
+        },
+        "author4": {
+            "name": "author4",
+            "avatar": "img4.jpg"
+        }
+    },
+    "posts": {
+        "p1": {
+            "title": "Title Post 1",
+            "body": "<b>Body</b> Post 1",
+            "author": "author1",
+            "avatar": "img1.jpg",
+            "date": "1488036465"
+        },
+        "p2": {
+            "title": "Title Post 2",
+            "body": "<b>Body</b> Post 2",
+            "author": "author1",
+            "avatar": "img1.jpg",
+            "date": "1488040065"
+        },
+        "p3": {
+            "title": "Title Post 3",
+            "body": "<b>Body</b> Post 3",
+            "author": "author2",
+            "avatar": "img2.jpg",
+            "date": "1488036460"
+        }
+    },
+    "comments": {
+        "c1": {
+            "title": "Title Comment 1",
+            "body": "Body Comment 1",
+            "author": "author3",
+            "avatar": "img3.jpg",
+            "date": "1488036466"
+        },
+        "c2": {
+            "title": "Title Comment 2",
+            "body": "Body Comment 2",
+            "author": "author4",
+            "avatar": "img4.jpg",
+            "date": "1488036466"
+        },
+        "c3": {
+            "title": "Title Comment 3",
+            "body": "Body Comment 3",
+            "author": "author3",
+            "avatar": "img3.jpg",
+            "date": "1488036467"
+        },
+        "c4": {
+            "title": "Title Comment 4",
+            "body": "Body Comment 5",
+            "author": "author4",
+            "avatar": "img4.jpg",
+            "date": "1488036466"
+        },
+        "c5": {
+            "title": "Title Comment 5",
+            "body": "Body Comment 5",
+            "author": "author1",
+            "avatar": "img1.jpg",
+            "date": "1488036466"
+        }
+    },
+    "commentsPerPost": {
+        "p1": {
+            "c1": "Title Comment 1",
+            "c2": "Title Comment 2"
+        },
+        "p2": {
+            "c3": "Title Comment 3"
+        },
+        "p3": {
+            "c4": "Title Comment 4",
+            "c5": "Title Comment 5"
+        }
+    }
+}

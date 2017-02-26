@@ -1,3 +1,21 @@
 <h1>
   {{title}}
 </h1>
+
+<div *ngIf="!(authService.af.auth | async)?.uid">
+  <button (click)="login()">Login With Google</button>
+  <button (click)="anonLogin()">Login Anonymously</button>
+</div>
+<div *ngIf="(authService.af.auth | async)?.uid">
+  <button (click)="logout()">Logout</button>
+  <div> {{ (authService.af.auth | async)?.uid }} </div>
+  <button (click)="addPost()">New post</button>
+</div>
+
+<ul>
+  <li class="text" *ngFor="let post of posts | async">
+    {{post.title}}
+    <div>{{post.body}} by {{post.author}}</div>
+    <button *ngIf="(authService.af.auth | async)?.uid" (click)="removePost(post.$key)">Delete</button>
+  </li>
+</ul>
